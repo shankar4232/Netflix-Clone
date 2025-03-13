@@ -1,0 +1,131 @@
+.tv-cards{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.tv-cards h2{
+    margin-bottom: 8px;
+}
+.tv-card-list{
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+}
+.tv-card-list::-webkit-scrollbar{
+    display: none;
+}
+.tv-card-list img{
+    width: 240px;
+    max-height: 140px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.tv-card-list .cardtv{
+    position: relative;
+}
+.tv-card-list .cardtv p{
+    position: absolute;
+    bottom: 10px;
+    font-size: smaller;
+    right: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Floating Pagination Buttons */
+.tv-pagination-btn  {
+    position: absolute;
+    top: 201%;
+    
+    transform: translateY(-50%);
+    background-color: rgba(74, 66, 66, 0.8);
+    color: white;
+    font-size: 28px;
+    border-radius: 7px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Left (Previous) Button */
+.tv-prev-btn {
+    left: 105px;
+}
+
+/* Right (Next) Button */
+.tv-next-btn {
+    right: 10px;
+}
+
+/* Hover Effect */
+.trend-pagination-btn:hover {
+    background-color: rgba(139, 0, 0, 0.9);
+}
+
+.notification-message {
+    position: absolute;
+    top: 35px; /* Moves it BELOW the "+" button */
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  
+  .notification-box {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: rgba(255, 215, 0, 0.9);
+        color: black;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        z-index: 1000;
+      }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-10px); }
+    10% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(-10px); }
+  }
+  
+  
+  
+
+
+@media (max-width:800px){
+    .tv-cards{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .tv-cards h2{
+        font-size: 20px
+    }
+    .tv-card-list img{
+        width: 200px;
+    }
+    .tv-card-list p{
+        font-size: 12px;
+    }
+}
+@media (max-width:500px){
+    
+    .tv-cards h2{
+        font-size: 15px
+    }
+    .tv-card-list img{
+        width: 165px;
+    }
+    .tv-card-list p{
+        
+        font-size: 10px;
+        
+    }
+}

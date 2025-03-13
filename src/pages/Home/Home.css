@@ -1,0 +1,164 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+    transition: opacity 0.5s ease-in-out;
+    /* height: 80vh; */
+    
+}
+
+.hero-caption {
+    position: absolute;
+    width: 100%;
+    padding-left: 3%;
+    bottom: 0;
+}
+
+.caption-img {
+    width: 90%;
+    max-width: 220px;
+    margin-left: 4%;
+    margin-bottom: 17px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hero-caption p {
+    max-width: 670px;
+    font-size: 16px;
+    /* font-family: 'popins'; */
+    margin-bottom: 17px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.hero-btns .btn img {
+    width: 25px;
+}
+
+.hero-btns .btn {
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Added transition */
+}
+
+.hero-btns .btn.dark-btn {
+    color: #fff;
+    background: #6d6d6eb3;
+}
+
+.hero-btns .btn:hover {
+    background: #ffffffbf;
+}
+
+.hero-btns .btn.dark-btn:hover {
+    background: #6d6d6e66;
+}
+
+.more-cards {
+    padding-left: 3%;
+}
+
+@media (max-width: 1024px) {
+    .hero-caption .title-cards {
+        display: none;
+    }
+    .hero-btns {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero-caption {
+        padding-left: 4%;
+    }
+    .caption-img {
+        margin-bottom: 10px;
+        width: 40%;
+    }
+    .hero-caption p {
+        font-size: 12px;
+        margin-bottom:  10px;
+    }
+    .hero-btns .btn img {
+        width: 20px;
+    }
+    .more-cards {
+        padding-left: 4%;
+    }
+}
+
+@media (max-width: 500px) {
+    .caption-img {
+        display: none;
+    }
+    .hero-btns .btn img {
+        width: 15px;
+    }
+    .btn {
+        padding: 4px 10px;
+        gap: 5px;
+        font-size: 10px;
+    }
+}
+
+.close-btn {
+    background-color: red; /* Set background color to red */
+    color: white; /* Set text color to white */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding for size */
+    font-size: 16px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.close-btn:hover {
+    background-color: darkred; /* Change background color on hover */
+}
+
+/* CSS for the modal overlay */
+.info-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+}
+
+/* CSS for the modal content */
+.info-modal-content {
+    max-width: 1000px; /* Set a max width for the modal */
+    margin: 10%; /* Center the modal with margin */
+    padding: 20px; /* Add padding inside the modal */
+    overflow-y: scroll;
+    border-radius: 10px; /* Rounded corners */
+    background-color: black; /* Background color */
+    color: white; /* Text color */
+}
+.info-modal-title{
+    margin-top: 2%;
+}
+.storyline-head{
+    font-size: 18px;
+    display: inline;
+}
+.storyline-info{
+    display: inline;
+    font-size: 15px;
+}
+

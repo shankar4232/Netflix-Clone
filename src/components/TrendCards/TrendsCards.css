@@ -1,0 +1,65 @@
+/* Ensure container positions elements properly */
+.trend-cards {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* Trend Card List */
+.trend-card-list {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.trend-card-list img {
+    width: 240px;
+    max-height: 130px; /* Prevents images from stretching */
+    border-radius: 4px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+
+.trend-card-list .cardtv{
+    position: relative;
+}
+.trend-card-list .cardtv p{
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+    font-size: smaller;
+    text-decoration: none;
+    color: #fff;
+}
+/* Floating Pagination Buttons */
+.trend-pagination-btn {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    background-color: rgba(74, 66, 66, 0.8);
+    color: white;
+    font-size: 28px;
+    border-radius: 7px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Left (Previous) Button */
+.trend-prev-btn {
+    left: 10px;
+}
+
+/* Right (Next) Button */
+.trend-next-btn {
+    right: 10px;
+}
+
+/* Hover Effect */
+.trend-pagination-btn:hover {
+    background-color: rgba(139, 0, 0, 0.9);
+}
