@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import "./TVCards.css";
+import "./Tvcards.css";
 
 const TVCards = ({ title, category }) => {
   const [apiData, setApiData] = useState([]);
