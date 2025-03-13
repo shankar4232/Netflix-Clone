@@ -50,3 +50,21 @@
     gap: 20px;
   }
   
+  
+@media (max-width: 500px) {
+  .tvshows button{
+    font-size: 9px;
+    padding: 7px;
+    margin-right: 1px;
+  }
+  .tvshows img{
+    margin-left: 2px;
+   
+  }
+  .tvshows h1{
+    font-size: 25px;
+  }
+  .tvshows p{
+    font-size: 10px;
+  }
+  }

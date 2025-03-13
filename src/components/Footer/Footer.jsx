@@ -28,7 +28,7 @@ const Footer = () => {
         <li>Corporate Informaion</li>
         <li>Contact Us</li>
       </ul>
-      <p className="copyright-text ">@ 2025 Netflix-Shankar,Inc</p>
+      <p className="copyright-text ">@ 2025 Netflix-clone by Shankar. Inc</p>
     </div>
   )
 }

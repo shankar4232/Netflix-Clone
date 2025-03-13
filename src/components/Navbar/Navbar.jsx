@@ -59,7 +59,7 @@ const Navbar = () => {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
-          <button type="submit">
+          <button type="submit" className='sub-btn'>
             <img src={search_icon} alt="Search Icon" className='icons' />
           </button>
         </form>

@@ -20,6 +20,7 @@
 
 .search-card img {
     width: 100%;
+    max-height: 250px;
     border-radius: 8px;
     transition: transform 0.2s;
 }
@@ -69,4 +70,13 @@
         padding: 2px; /* Further reduce padding */
         font-size: 6px; /* Even smaller font size */
     }
+    .back-btn{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .search-results h1{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    
 }

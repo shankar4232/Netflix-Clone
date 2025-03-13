@@ -132,8 +132,8 @@ const Home = () => {
           <img src={titleImages[currentIndex]} alt={`Title ${currentIndex + 1}`} className='caption-img' />
           <p>{bannerData[currentIndex].description}</p>
           <div className="hero-btns">
-            <button className='btn' onClick={handlePlayClick}><img src={play_icon} alt="Play" />Play</button>
-            <button className='btn dark-btn' onClick={handleMoreInfoClick}><img src={info_icon} alt="More Info" />More Info</button>
+            <button className='btn' onClick={handlePlayClick}><img src={play_icon} alt="Play" className='play-image' />Play</button>
+            <button className='btn dark-btn' onClick={handleMoreInfoClick}><img src={info_icon} alt="More Info" className='info-image'/>More Info</button>
           </div>
           <Titlecards />
         </div>
@@ -197,14 +197,16 @@ const Home = () => {
           overflowY: 'auto', // Allow scrolling if content overflows
         }
       }}>
+        <div className='info-tag'>
         <button className='close-btn' type="button" onClick={closeInfoModal}>Close</button>
         <h2 className='info-modal-title'>{bannerData[currentIndex].title[0]}</h2><br />
-        <h2>{bannerData[currentIndex].title[1]}</h2>
+        <h2 >{bannerData[currentIndex].title[1]}</h2>
         <h2>{bannerData[currentIndex].title[2]}</h2>
         <h2>{bannerData[currentIndex].title[3]}</h2>
         <h2>{bannerData[currentIndex].title[4]}</h2><br />
         <h2 className='storyline-head'>{bannerData[currentIndex].title[5]}</h2>
         <p className='storyline-info'>{bannerData[currentIndex].moreInfo}</p>
+        </div>
       </Modal>
     </div>
   );

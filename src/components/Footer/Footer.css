@@ -36,3 +36,26 @@
     }
 
 }
+@media (max-width:500px){
+    .footer-icons img{
+        width: 15px;
+    }
+    .footer-icons ul{
+        grid-template-columns: auto  auto;
+        gap: 4px;
+        font-size: 7px;
+
+    }
+    .footer ul{
+        grid-template-columns: auto auto auto  ;
+        font-size: 10px;
+        gap: 3px;
+    }
+    .footer p{
+        
+        font-size: 10px;
+        
+    }
+
+
+}

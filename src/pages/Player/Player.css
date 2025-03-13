@@ -23,3 +23,23 @@
     justify-content: space-between;
     width: 90%;
 }
+@media(max-width:400px){
+    .player{
+        margin-top: 40%;
+        height: 500px;
+    }
+    .player p{
+        font-size: 10px;
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .player img{
+        margin-top: 10%;
+        width: 50px;
+
+    }
+    .player img:hover{
+        transform: scale(0.97);
+    }
+}

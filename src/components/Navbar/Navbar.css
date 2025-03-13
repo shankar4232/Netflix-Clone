@@ -80,25 +80,77 @@ cursor: pointer;
     background-color: #141414;
 }
 
-@media (max-width:800px){
-    .navbar{
-        padding: 20px 4%;
+/* ✅ For Tablets & Small Screens */
+@media (max-width: 800px) {
+    .navbar {
+        padding: 15px 3%; /* Reduce padding */
     }
-    /* .navbar-left ul{
+    .navbar-left ul {
+        gap: 15px; /* Reduce spacing between links */
+    }
+    .navbar img {
+        height: 22px; /* Smaller logo */
+    }
+    .navbar-right {
+        gap: 8px; /* Reduce spacing */
+    }
+}
+
+/* ✅ For Mobile Screens */
+@media (max-width: 500px) {
+    .navbar {
+        padding: 10px 2%;
+        flex-direction: column; /* Stack elements if needed */
+        align-items: end;
+    }
+    .navbar-left ul {
+        margin-left: -9%;
+        margin-bottom: -1%;
+        display: flex;
+        padding: 2px;
+        flex-wrap: wrap;
+        justify-content: start;
+        font-size: 10px; /* Smaller text */
+        gap: 7px;
+    }
+    .navbar-left img{
+        margin-bottom: 4%;
+    }
+    .navbar img {
+
+        width: 50px;
+        gap: 9px;
+        height: 10px; /* Further reduce size */
+    }
+    .navbar-right {
+        margin-top: -18px;
+        gap: 1px; 
+    }
+    .navbar-right p{
+        font-size: 8px;
+    }
     
-    } */
-    .navbar img{
-        height: 25px;
+    .search-bar input {
+        width: 27px; /* Shrink search input */
+        height: 8px;
+        font-size: 4px;
+        margin-left: -20%;
+    }
+    
+    .icons {
+        width: 8px;
+        height: 8px; /* Smaller icons */
+    }
+    .navbar-profile img {
+        margin-right: 5px;
+        width: 6px;
+        height: 15px; /* Adjust profile image */
+    }
+    .dropdown p{
+        font-size: 10px;
     }
 }
-@media (max-width:500px){
-    .navbar img{
-        height:20px ;
-    }
-    .navbar-right{
-        gap: 10px;
-    }
-}
+
 
 .search-bar {
     display: flex;

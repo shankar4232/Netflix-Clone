@@ -50,3 +50,8 @@
     gap: 20px;
   }
   
+  @media (max-width: 500px) {
+    .back-btn{
+      font-size: 10px;
+    }
+  }

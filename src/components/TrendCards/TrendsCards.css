@@ -63,3 +63,43 @@
 .trend-pagination-btn:hover {
     background-color: rgba(139, 0, 0, 0.9);
 }
+@media (max-width:800px){
+    .trend-cards{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .trend-cards h2{
+        font-size: 20px
+    }
+    .trend-card-list img{
+        width: 200px;
+    }
+    .trend-card-list p{
+        font-size: 12px;
+    }
+}
+@media (max-width:500px){
+    
+    .trend-cards h2{
+        font-size: 15px
+    }
+    .trend-card-list img{
+        width: 165px;
+        height: 96px;
+    }
+    .trend-card-list p{
+        font-size: 10px;
+        
+    }
+    .pagination-btn {
+        margin-top: 2%;
+        padding-top: 0px;
+      
+        font-size: 10px;  /* Reduce text size */
+         /* Adjust padding */
+        width: 25px;  /* Adjust width */
+        height: 40px; /* Adjust height */
+        border-radius: 5px; /* Slightly rounded corners */
+    }
+    
+}

@@ -111,3 +111,25 @@
     background-color: #514040;
 
   }
+  
+  @media (max-width:500px){
+    .back-btn{
+      font-size: 10px;
+      padding: 0px;
+    }
+    .browse-container button{
+      font-size: 10px;
+      padding: 5px;
+    }
+    .browse-container h2{
+      margin-top: 24px;
+    }
+    .language-dropdown{
+      font-size: 10px;
+    }
+    .scroll-btn{
+      border-radius: 3px;
+      width: 22px;
+      height: 35px;
+    }
+}

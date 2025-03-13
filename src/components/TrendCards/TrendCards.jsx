@@ -123,6 +123,7 @@ const TrendCards = ({ title, category }) => {
       <button
         onClick={() => setPage((prevPage) => Math.max(prevPage - 1, 1))}
         disabled={page === 1}
+        className="pagination-btn"
         style={{
           position: "absolute",
           left: "10px",
@@ -147,6 +148,7 @@ const TrendCards = ({ title, category }) => {
 
       <button
         onClick={() => setPage((prevPage) => prevPage + 1)}
+         className="pagination-btn"
         style={{
           position: "absolute",
           right: "10px",
